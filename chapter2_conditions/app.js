@@ -1,18 +1,59 @@
-const sayi1 = Number(prompt("Ilk sayiyi giriniz: "));
-const islem = prompt("Islemi giriniz: ");
-const sayi2 = Number(prompt("Ikinci sayiyi giriniz: "));
-let sonuc;
+// ** ==========  IF-ELSE IF-ELSE  ==========
 
-if(islem == "+"){
-    sonuc = sayi1 + sayi2;
-}else if(islem == "-"){
-    sonuc = sayi1 - sayi2;
-}else if(islem == "*"){
-    sonuc = sayi1 * sayi2;
-}else if(islem == "/"){
-    sonuc = sayi1 / sayi2;
+const number1 = Number(prompt("Enter first number: "));
+const operation = prompt("Enter the operation: ");
+const number2 = Number(prompt("Enter second number: "));
+let result;
+
+if(operation == "+"){
+    result = number1 + number2;
+}else if(operation == "-"){
+    result = number1 - number2;
+}else if(operation == "*"){
+    result = number1 * number2;
+}else if(operation == "/"){
+    result = number1 / number2;
 }else{
-    alert("Yanlis islem yaptiniz!");
+    alert("You did wrong operation!");
 }
 
-console.log(`${sayi1} ${islem} ${sayi2} = ${sonuc}`);
+console.log(`${number1} ${operation} ${number2} = ${result}`);
+
+// ** ==========  SWITCH-CASE  ==========
+
+const dayOfTheWeek = Number(prompt("Enter the day"));
+switch (dayOfTheWeek) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break; 
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        alert("Day should be between 1 to 7");
+        break;
+}
+console.log(dayName);
+
+// ** ==========  TERNARY  ==========
+
+const maas = prompt("Maasinizi giriniz: ");
+const calismaSuresi = prompt("Kac yillik calisansiniz? ");
+
+const zamliMaas = calismaSuresi > 10 ? maas*1.5 : (calismaSuresi > 5 ? maas*1.2 : maas*1.05);
+console.log(zamliMaas);
