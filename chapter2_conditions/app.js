@@ -45,7 +45,7 @@ switch (dayOfTheWeek) {
         dayName = "Sunday";
         break;
     default:
-        alert("Day should be between 1 to 7");
+        alert("Day should be between 1 to 7 👎");
         break;
 }
 console.log(dayName);
