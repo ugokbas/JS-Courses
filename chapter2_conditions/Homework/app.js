@@ -1,22 +1,22 @@
 // ! Question-1
 
-const point = Number(prompt("Enter your exam point: "));
+// const point = Number(prompt("Enter your exam point: "));
 
-if(90 < point <= 100){
-    console.log("Your letter grade: AA");
-}else if(75 < point <= 90){
-    console.log("Your letter grade: BA");
-}else if(65 < point <= 75){
-    console.log("Your letter grade: BB");
-}else if(45 < point <= 65){
-    console.log("Your letter grade: CC");
-}else if(25 < point <= 45){
-    console.log("Your letter grade: DD");
-}else if(0 <= point <= 25){
-    console.log("Your letter grade: FF");
-}else{
-    console.log("Error! Out of range entry!");
-}
+// if(90 < point <= 100){
+//     console.log("Your letter grade: AA");
+// }else if(75 < point <= 90){
+//     console.log("Your letter grade: BA");
+// }else if(65 < point <= 75){
+//     console.log("Your letter grade: BB");
+// }else if(45 < point <= 65){
+//     console.log("Your letter grade: CC");
+// }else if(25 < point <= 45){
+//     console.log("Your letter grade: DD");
+// }else if(0 <= point <= 25){
+//     console.log("Your letter grade: FF");
+// }else{
+//     console.log("Error! Out of range entry!");
+// }
 
 // ! Question-2
 
@@ -102,4 +102,12 @@ const evenOrOdd = number % 2 === 0 ? `${number} is even number!` : `${number} is
 console.log(evenOrOdd); 
 
 // ! Question-5
+
+const degreeType = prompt("Fahrenheit to Celsius or Celsius to Fahrenheit");
+
+const degree = Number(prompt("Enter the degree: "));
+
+const result = degreeType === "Fahrenheit to Celsius" ? (degree - 32) / 1.8 : degree * 1.8 + 32;
+
+console.log(result);
 
