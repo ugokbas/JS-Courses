@@ -57,3 +57,27 @@ const calismaSuresi = prompt("Kac yillik calisansiniz? ");
 
 const zamliMaas = calismaSuresi > 10 ? maas*1.5 : (calismaSuresi > 5 ? maas*1.2 : maas*1.05);
 console.log(zamliMaas);
+
+// ** ==========  FOR  ==========
+
+const num = Number(prompt("Enter a number: "));
+const primeNumber = true;
+
+for (let index = 2; index < num; index++) {
+    if(num % index === 0){
+        primeNumber = false;
+        break;
+    }
+}
+primeNumber === true ? console.log("Number is prime!") : console.log("Number is not prime!");
+
+// ** ==========  WHILE  ==========
+
+let point;
+point = prompt("Enter a number between 0 to 100");
+while(point < 0 || point > 100){
+    console.warn("Incorrect entry. Try again!");
+    point = prompt("Enter a number between 0 to 100");
+}
+console.log("Value is between 0 to 100 👍");
+

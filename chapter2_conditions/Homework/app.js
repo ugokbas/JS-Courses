@@ -1,24 +1,24 @@
-// ! Question-1
+// ! Question-1 : Letter Grade
 
-// const point = Number(prompt("Enter your exam point: "));
+// let point = Number(prompt("Enter your exam point: "));
 
-// if(90 < point <= 100){
-//     console.log("Your letter grade: AA");
-// }else if(75 < point <= 90){
-//     console.log("Your letter grade: BA");
-// }else if(65 < point <= 75){
-//     console.log("Your letter grade: BB");
-// }else if(45 < point <= 65){
-//     console.log("Your letter grade: CC");
-// }else if(25 < point <= 45){
-//     console.log("Your letter grade: DD");
-// }else if(0 <= point <= 25){
+// if(25 > point >= 0){
 //     console.log("Your letter grade: FF");
+// }else if(45 >= point){
+//     console.log("Your letter grade: DD");
+// }else if(65 >= point){
+//     console.log("Your letter grade: CC");
+// }else if(75 >= point){
+//     console.log("Your letter grade: BB");
+// }else if(90 >= point){
+//     console.log("Your letter grade: BA");
+// }else if(100 >= point){
+//     console.log("Your letter grade: AA");
 // }else{
 //     console.log("Error! Out of range entry!");
 // }
 
-// ! Question-2
+// ! Question-2 : Which Month?
 
 const month = prompt("Enter the month name: ");
 
@@ -64,7 +64,7 @@ switch(month){
         break;
 }
 
-// ! Question-3
+// ! Question-3 : Addition, Multiplication, Find the Largest and Smallest
 
 const firstNumber = Number(prompt("Enter the first number: "));
 const secondNumber = Number(prompt("Enter the second number: "));
@@ -93,7 +93,7 @@ if(firstNumber < secondNumber && firstNumber < thirdNumber){
     console.log("Equal numbers exist!");
 }
 
-// ! Question-4: Even or Odd Number
+// ! Question-4 : Even or Odd Number
 
 const number = Number(prompt("Enter a number: "));
 
@@ -101,7 +101,7 @@ const evenOrOdd = number % 2 === 0 ? `${number} is even number!` : `${number} is
 
 console.log(evenOrOdd); 
 
-// ! Question-5
+// ! Question-5 : Degree Conversion
 
 const degreeType = prompt("Fahrenheit to Celsius or Celsius to Fahrenheit");
 
