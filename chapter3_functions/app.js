@@ -30,3 +30,4 @@ console.log(evenOdd(5)); // function calling
 const summing = (x,y) => x + y;
 
 console.log(summing(15,20)); // function calling (invoke)
+
