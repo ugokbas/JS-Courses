@@ -13,6 +13,8 @@
   /* background-color: antiquewhite; */
 }
 
-.textbox {
+.textbox,
+.language {
   width: 300px;
+  height: 40px;
 }

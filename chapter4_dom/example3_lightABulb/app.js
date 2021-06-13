@@ -32,3 +32,4 @@ h1.appendChild(text);
 afterDiv.after(h1);
 h1.style.marginTop = "20px";
 h1.style.color = "red";
+h1.style.textAlign = "left";
