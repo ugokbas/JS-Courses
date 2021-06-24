@@ -33,3 +33,24 @@ afterDiv.after(h1);
 h1.style.marginTop = "20px";
 h1.style.color = "red";
 h1.style.textAlign = "left";
+
+document.querySelector(".add").addEventListener("click", () => {
+    // ekleme yapilacak listeyi al
+    const list = document.querySelector(".list");
+    // input elemanina girilen yeni satirin degerini al
+    const row = document.querySelector(.language).value;
+    // yeni girilen satiri saklamak icin bir li olursturduk
+    const newList = document.createElement("li");
+    // newList icin textNode olusturduk
+    const textNode = document.createTextNode(row);
+    // olusturdugumuz textNode'u newList'e bagladik
+    newList.appendChild(textNode);
+    // yeni eklenen satiri var olan listeye (ul) baglayalim
+    list.append(newList);
+})
+
+document.querySelector(".delete").addEventListener("click", () => {
+    const list = document.querySelector(".list");
+    // list.removeChild(list.firstElementChild); // ilk elemani sil
+    list.removeChild(list.lastElementChild); // son elemani sil
+})
