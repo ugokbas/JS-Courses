@@ -1,0 +1,22 @@
+.container {
+  width: 100vw; /*viewport width --> 100vw : full of screen*/
+  height: 100vh; /*viewport height --> 100vh : full of screen*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: cornsilk;
+}
+
+h1 {
+  background-color: white;
+}
