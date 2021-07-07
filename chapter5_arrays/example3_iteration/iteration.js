@@ -30,4 +30,31 @@ number == 0
     console.log(output);
 
 
+// =============== FOR EACH ==================
 
+let students = ["Mike", "John", "Kate", "Brad", "Tom", "Jennifer", "Brie"];
+
+function print(i) {
+    console.log(i);
+}
+
+students.forEach(print);
+
+// ------------- With Arrow Function -------------
+
+students.forEach((x) => console.log(x));
+
+
+// ============== NUM() =====================
+// ============ EXAMPLE-1 ===================
+
+const nums = [3,5,1,4,6,0,2,8];
+const multiplyTwo = nums.map((x) => x * 2);
+console.log(multiplyTwo, nums);
+
+// ============ EXAMPLE-2 ===================
+// use together map() and forEach()
+
+const names = ["John", "Anthony", "Jack", "Leonardo", "Brad", "Giorgio", "Alexander", "Matthew"];
+// Pipeline
+names.map((name) => name.toUpperCase()).forEach((name) => console.log(name));
