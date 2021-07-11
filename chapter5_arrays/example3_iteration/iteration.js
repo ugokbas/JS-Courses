@@ -58,3 +58,25 @@ console.log(multiplyTwo, nums);
 const names = ["John", "Anthony", "Jack", "Leonardo", "Brad", "Giorgio", "Alexander", "Matthew"];
 // Pipeline
 names.map((name) => name.toUpperCase()).forEach((name) => console.log(name));
+
+
+// EXCHANGE
+tlPrices = [120, 340, 550, 245, 322.5, 789];
+
+const dollarRate = document.querySelector(".dollar");
+const euroRate = document.querySelector(".euro");
+
+const dollar = document.querySelector(".dollar-price");
+const euro = document.querySelector(".euro-price");
+
+dollarRate.addEventListener("change", () => {
+    dollarRate.value < 0 ? alert("Error!") : 
+    dollar.innerHTML = tlPrices.map((tl) => (tl / dollarRate.value).toFixed(2));
+})
+
+euroRate.addEventListener("change", () => {
+    euroRate.value < 0 ? alert("Error!") : 
+    euro.innerHTML = tlPrices.map((tl) => (tl / euroRate.value).toFixed(2));
+})
+
+
