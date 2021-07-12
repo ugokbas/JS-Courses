@@ -79,4 +79,15 @@ euroRate.addEventListener("change", () => {
     euro.innerHTML = tlPrices.map((tl) => (tl / euroRate.value).toFixed(2));
 })
 
+// RAISE
+
+const newPrices = tlPrices.map((value,index) => {
+    if(value < 250){
+        return `increased price of ${index + 1}.product : ${value * 1.1}`;
+    } else{
+        return `increased price of ${index + 1}.product : ${value * 1.2}`;
+    }
+})
+
+
 
