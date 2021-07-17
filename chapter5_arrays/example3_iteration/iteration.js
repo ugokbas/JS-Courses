@@ -83,11 +83,23 @@ euroRate.addEventListener("change", () => {
 
 const newPrices = tlPrices.map((value,index) => {
     if(value < 250){
-        return `increased price of ${index + 1}.product : ${value * 1.1}`;
+        return `increased price of ${index + 1}.product : ${value * 1.1} <br> `;
     } else{
-        return `increased price of ${index + 1}.product : ${value * 1.2}`;
+        return `increased price of ${index + 1}.product : ${value * 1.2} <br> `;
     }
-})
+}).join("");
 
+document.querySelector(".increased-price").innerHTML = newPrices;
+console.log(newPrices);
 
+// ! copy smaller than 250
 
+const smaller = tlPrices.filter( (x) => x < 250);
+console.log(smaller);
+
+// =============== PIPELINE ===============
+
+tlPrices
+    .filter( (x) => x <= 400)
+    .map( (x) => x * 1.25)
+    .forEach( (x) => console.log(x));
