@@ -103,3 +103,36 @@ tlPrices
     .filter( (x) => x <= 400)
     .map( (x) => x * 1.25)
     .forEach( (x) => console.log(x));
+
+    
+const cities = [
+    "London", 
+    "Madrid", 
+    "Amsterdam", 
+    "Paris", 
+    "Berlin", 
+    "Brussels", 
+    "Lisbon", 
+    "Warsaw", 
+    "Zurich", 
+    "Rome",
+    "Athens",
+    "Prag",
+    "Moscow"];
+
+const findCity = (letter) => {
+    const uCase = letter.toUpperCase();
+    cities.filter((city) => city.startsWith(uCase)).forEach((x) => console.log(x));
+}
+
+findCity("a"); // Amsterdam, Athens
+findCity("B"); // Berlin, Brussels
+
+const multiplication = tlPrices.reduce((x,y) => x * y, 1); // => (x,y) => operation, startingValue
+console.log(multiplication);
+
+const total = tlPrices.reduce((x,y,i) => {
+    console.log(` ${i}. iteration : ${x} `);
+    return x + y;
+}); 
+console.log(total);
