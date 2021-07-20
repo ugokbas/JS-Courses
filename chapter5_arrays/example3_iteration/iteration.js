@@ -128,6 +128,10 @@ const findCity = (letter) => {
 findCity("a"); // Amsterdam, Athens
 findCity("B"); // Berlin, Brussels
 
+// =============== REDUCE() ===============
+
+// ! tlPrices = [120, 340, 550, 245, 322.5, 789];
+
 const multiplication = tlPrices.reduce((x,y) => x * y, 1); // => (x,y) => operation, startingValue
 console.log(multiplication);
 
@@ -136,3 +140,11 @@ const total = tlPrices.reduce((x,y,i) => {
     return x + y;
 }); 
 console.log(total);
+
+// -- Example: New Averages -- //
+
+const averageWage = tlPrices.reduce((w,x) => w + x) / tlPrices.length;
+const newWage = tlPrices
+    .filter((a) => a < averageWage)
+    .map((a) => a * 1.1);
+console.log(newWage);
