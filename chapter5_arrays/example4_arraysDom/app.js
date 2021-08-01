@@ -20,7 +20,22 @@ addArrayToList();
 
 document.querySelector(".add").onclick = function(){
     let add = document.querySelector(".input-list");
-    wages.push(Number(add.value));
-    addToList(add.value);
-    add.value = "";
+    if(!add.value){
+        alert("You didn't enter a wage")
+    }else{
+        wages.push(Number(add.value));
+        addToList(add.value);
+        add.value = "";
+    } 
 }
+
+document.querySelector(".delete").onclick = function(){
+    if(wages.length == 0){
+        alert("No wages!");
+    }else{
+        wages.pop();
+        const list = document.querySelector(".list");
+        list.removeChild(list.lastElementChild);
+    }  
+}
+
