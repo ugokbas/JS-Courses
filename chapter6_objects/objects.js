@@ -1,3 +1,5 @@
+// Object literal
+
 const human = {
     name: "Can",
     surname: "Yilmaz",
