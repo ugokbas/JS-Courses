@@ -16,8 +16,8 @@ console.log(name1, location1);
 
 // 2.Way - Object Destructuring
 
-const {name2, surname, location, email} = birey;
-console.log(name2, surname, location, email);
+const {name, surname, location, email} = birey;
+console.log(name, surname, location, email);
 
 function obtainInfo(){
     return {
